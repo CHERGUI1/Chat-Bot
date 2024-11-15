@@ -148,13 +148,30 @@ body, html {
         width: 40vw;
         height: 40vw;
     }
+    .First-Page-bot {
+        max-width: 150px;
+        left: 5%;
+        bottom: 25%;
+    }
+    .header{
+        padding: 1px;
+    }
+    .Header-Bot{
+        width: 40px;
+    }
+    .title a{
+        font-size: 1.5em;
+        padding: 0px 10px;
+    }
+    .navbar{
+        padding: 0px 1Px;
+    }
+    .navbar a{
+        padding: 0px 10Px;
+        font-size: 0.9em;
+    }
+
 }
-
-
-
-
-
-
 
 
 

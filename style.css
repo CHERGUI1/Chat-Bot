@@ -1,6 +1,8 @@
 h1{
     background-color: green;
-    color: red;
+    color: black ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
 }

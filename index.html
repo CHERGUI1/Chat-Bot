@@ -1,20 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Enginuity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo.icon.png">
+    
 </head>
-<body>
+<body class="First-Page">
+    <!-- شريط التنقل -->
+    <header>
+        <div class="header">
+            <div class="title">
+                <img src="Header-Bot.png" alt="bot-img" class="Header-Bot">
+                <a href="index.html">Enginuity</a>
+            </div>
+            <nav class="navbar">
+                <a href="#">Accueil</a>
+                <a href="About.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <h1> salam khoti</h1>
+
+
+    <!-- زر البدء -->
+    <div class="container">
+        <div class="bot-container">
+            <img src="Fist-Page-Bot.png" alt="bot-img" class="First-Page-bot">
+        </div>
+        <div class="start-container">
+            <button class="start-button" onclick="openChat()"></button>
+        </div>
+        <div>
+
+        </div>
+    </div>
     
 
 
 
-
-
-    <script src="script.js"></script>
+    <script>
+        function openChat() {
+            window.location.href = "chat.html";
+        }
+    </script>
 </body>
 </html>

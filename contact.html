@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enginuity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo.icon.png">
+
+
+    <style>
+        /* إعدادات عامة */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    padding: 0px 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.8s ease;
+    text-align: center;
+
+}
+
+.links a:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+    text-decoration:wavy;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title a {
+    color: #ffffff;
+    padding: 0px 15px;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.Header-Bot{
+    height: auto;
+    width: 60px;
+    
+}
+/* إعدادات نموذج الاتصال */
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="title">
+                <img src="Header-Bot.png" alt="bot-img" class="Header-Bot">
+                <a href="index.html">Enginuity</a>
+            </div>
+            <div class="links">
+                <a href="index.html">Accueil</a>
+                <a href="chat.html">Chatbot</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">À propos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contactez-nous</h2>
+            <form action="index.html" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Sujet :</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

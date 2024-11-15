@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enginuity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo.icon.png">
+
+
+    <style>
+        /* إعدادات عامة */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* إعدادات الناف بار */
+header {
+    background-color: #333;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    padding: 0px 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.8s ease;
+    text-align: center;
+
+}
+
+.links a:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title a {
+    color: #ffffff;
+    padding: 0px 15px;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.Header-Bot{
+    height: auto;
+    width: 60px;
+    
+}
+
+/* إعدادات قسم "À propos" */
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title">
+                <img src="Header-Bot.png" alt="bot-img" class="Header-Bot">
+                <a href="index.html">Enginuity</a>
+            </div>
+            <div class="links">
+                <a href="index.html">Accueil</a>
+                <a href="chat.html">Chatbot</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">À propos</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>À propos de nous</h2>
+            <p>Bienvenue sur notre site dédié aux solutions dans le domaine de la mécanique !</p>
+            <p>Notre objectif est de fournir un chatbot qui assiste les étudiants et professionnels en mécanique en répondant aux questions techniques, en fournissant des informations pratiques, et en facilitant l'apprentissage.</p>
+            <p>Avec notre équipe d'experts en ingénierie mécanique, nous nous efforçons de rendre la compréhension des concepts mécaniques plus accessible et interactive.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -71,6 +71,11 @@ header nav {
 }
 
 /* إعدادات قسم "À propos" */
+main{
+    justify-content: center;
+    display: flex;
+}
+
 .about-section {
     max-width: 800px;
     margin: 50px auto;
@@ -78,6 +83,7 @@ header nav {
     background-color: #f4f4f4;
     border-radius: 8px;
     text-align: center;
+
 }
 
 .about-section h2 {
@@ -91,10 +97,33 @@ header nav {
     line-height: 1.6;
     margin-bottom: 15px;
 }
+@media (max-width: 480px) {
+    .title a {
+        font-size: 1.5em;
+        padding: 0px 10px;
+    }
 
+    .navbar a {
+        font-size: 0.9em;
+    }
+    header nav{
+        padding: 1px;
+    }
+    .Header-Bot{
+        width: 40px;
+    }
+    .links{
+        padding: 0px 1Px;
+    }
+    .links a{
+        padding: 0px 7Px;
+        font-size: 0.9em;
+    }
+    body, html{
+        overflow: hidden;
+    }
+}
     </style>
-
-
 </head>
 <body>
     <header>
@@ -104,10 +133,9 @@ header nav {
                 <a href="index.html">Enginuity</a>
             </div>
             <div class="links">
-                <a href="index.html">Accueil</a>
                 <a href="chat.html">Chatbot</a>
-                <a href="contact.html">Contact</a>
                 <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
             </div>
         </nav>
     </header>

@@ -342,5 +342,10 @@ input[type="text"] {
         padding: 1PX 5px;
         font-size: 0.9em;
     }
+    .user-message {
+        padding: 6px 8px;
+        margin-bottom: 10px;
+        font-size: 0.9em;
+    }
 
 }

@@ -1,8 +1,19 @@
 const inputField = document.getElementById("user-input");
 const sendButton = document.querySelector("button");
+let responses = {}; // مكان لتخزين بيانات JSON
 
+// تحميل بيانات الأسئلة والأجوبة من ملف JSON
+fetch('questions.json')
+    .then(response => response.json())
+    .then(data => {
+        responses = data;
+        console.log("Données chargées avec succès :", responses);
+    })
+    .catch(error => console.error("Erreur lors du chargement du fichier JSON :", error));
+
+// إرسال رسالة المستخدم
 function sendMessage() {
-    const userInput = inputField.value.trim().toLowerCase();
+    const userInput = inputField.value.trim().toLowerCase(); // تحويل إلى أحرف صغيرة
     if (userInput === "") return;
 
     addMessageToChat(userInput, "user-message");
@@ -16,11 +27,13 @@ function sendMessage() {
     }, 1000);
 }
 
+// تعطيل أو تفعيل الإدخال
 function toggleInput(enable) {
     inputField.disabled = !enable;
     sendButton.disabled = !enable;
 }
 
+// إضافة الرسائل إلى واجهة المستخدم
 function addMessageToChat(message, className) {
     const chatBox = document.getElementById("chat-box");
     const messageElement = document.createElement("div");
@@ -49,76 +62,89 @@ function addMessageToChat(message, className) {
     }, 100);
 }
 
+// تقييم التعبيرات الرياضية باستخدام math.js
 function calculateExpression(input) {
     try {
-        // استخدام مكتبة math.js لتقييم المعادلة
-        const result = math.evaluate(input);
+        const result = math.evaluate(input); // تقييم المعادلة
         return `Le résultat est : ${result}`;
     } catch (error) {
-        return "Désolé, je n'ai pas compris l'équation. Assurez-vous de saisir correctement l'expression.";
+        return null; // إذا لم تكن معادلة صحيحة، إرجاع null
     }
 }
 
+// البحث عن أقرب تطابق للسؤال
+function findClosestMatch(input) {
+    const keys = Object.keys(responses);
+    let bestMatch = null;
+    let bestScore = 0;
+
+    keys.forEach(key => {
+        const score = similarity(key, input);
+        if (score > bestScore) {
+            bestScore = score;
+            bestMatch = key;
+        }
+    });
+
+    return bestScore > 0.6 ? bestMatch : null; // اعتبر المطابقة جيدة إذا كانت أعلى من 0.6
+}
+
+// حساب التشابه بين النصوص
+function similarity(s1, s2) {
+    const longer = s1.length > s2.length ? s1 : s2;
+    const shorter = s1.length > s2.length ? s2 : s1;
+    const longerLength = longer.length;
+
+    if (longerLength === 0) return 1.0;
+
+    return (longerLength - editDistance(longer, shorter)) / longerLength;
+}
+
+// حساب مسافة التحرير
+function editDistance(s1, s2) {
+    s1 = s1.toLowerCase();
+    s2 = s2.toLowerCase();
+
+    const costs = new Array(s2.length + 1);
+
+    for (let i = 0; i <= s1.length; i++) {
+        let lastValue = i;
+
+        for (let j = 0; j <= s2.length; j++) {
+            if (i === 0) {
+                costs[j] = j;
+            } else if (j > 0) {
+                const newValue = costs[j - 1];
+                costs[j - 1] = lastValue;
+
+                lastValue = s1[i - 1] === s2[j - 1] ? newValue : Math.min(newValue, lastValue, costs[j]) + 1;
+            }
+        }
+
+        if (i > 0) {
+            costs[s2.length] = lastValue;
+        }
+    }
+
+    return costs[s2.length];
+}
+
+// الحصول على رد البوت
 function getBotResponse(userInput) {
     // تحقق إذا كان الإدخال يحتوي على رموز حسابية
-    if (/[\d+\-*/().]/.test(userInput)) {
-        return calculateExpression(userInput);
+    const calculationResult = calculateExpression(userInput);
+    if (calculationResult) return calculationResult;
+
+    // تحقق من وجود سؤال مطابق في JSON
+    const closestMatch = findClosestMatch(userInput);
+    if (closestMatch) {
+        return responses[closestMatch].join("\n");
     }
 
-    const responses = {
-                /* swab */
-                "merci": ["De rien !", "Avec plaisir !", "Je suis là pour vous aider."],
-                "merci bien": ["De rien !", "Je suis content d'avoir pu aider.", "Avec plaisir !"],
-                "salut": ["Salut ! Comment puis-je vous aider aujourd'hui ?", "Bonjour !"],
-                "bonjour": ["Bonjour ! Que puis-je faire pour vous aujourd'hui ?"],
-                "comment ça va ?": ["Je suis juste un bot, mais je fonctionne bien. Et vous ?"],
-                "aidez-moi": ["Bien sûr, que puis-je faire pour vous?", "Dites-moi ce dont vous avez besoin.", "Je suis là pour vous aider!"],
-                /* question de cour */
-                "qu'est-ce que la mécanique du point ?": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
-                "quelle est la première loi de newton ?": ["La première loi de Newton est la loi d'inertie : un objet en mouvement reste en mouvement à moins qu'une force extérieure n'agisse sur lui."],
-                "comment formuler l'équation du mouvement ?": ["L'équation du mouvement selon Newton est F = ma, où F est la force, m la masse, et a l'accélération."],
-                "qu'est-ce qu'un référentiel galiléen ?": ["Un référentiel galiléen est un référentiel où la première loi de Newton est valide."],
-                "quelle est la quantité de mouvement linéaire ?": ["La quantité de mouvement est donnée par p = mv, où p est la quantité de mouvement, m la masse, et v la vitesse."],
-                "qu'est-ce que le travail mécanique ?": ["Le travail mécanique est lié à la variation de l'énergie cinétique d'un corps."],
-                /* question sur FST */
-                "quels sont les modules du programme de s1 ?": ["Les modules du S1 en FST incluent généralement des matières de base comme les mathématiques, la physique, la chimie, et l'informatique. Ces matières visent à établir des fondations solides pour les filières futures."],
-                "quelles sont les matières les plus importantes à maîtriser pour réussir en s1 ?": ["Les mathématiques et la physique sont souvent cruciales pour bien comprendre les concepts des semestres suivants. L’informatique est aussi important pour développer des compétences techniques utiles."],
-                "comment bien organiser son emploi du temps pour suivre tous les cours et les td ?" :["Il est recommandé de prioriser les matières où l’on a le plus de difficulté. Utilise un agenda pour répartir le temps de révision, d’exercices et de repos."],
-                "y a-t-il des ressources ou des livres recommandés pour chaque module ?" : ["Demande à tes professeurs ou consulte le site de la FST pour connaître les livres conseillés. Utiliser des ressources en ligne comme des plateformes de cours en ligne peut aussi être utile."],
-                "comment les cours sont-ils évalués (examens, devoirs, tp, etc.) ?" : ["La note finale de chaque module peut être basée sur une combinaison d’examens, de devoirs, de contrôles continus, et des TP. La répartition exacte est souvent communiquée par chaque professeur."],
-                "les cours sont-ils en présentiel ou en distanciel ?" : ["La majorité des cours sont en présentiel. Cependant, certaines ressources et certains supports peuvent être disponibles en ligne."],
-                "modules du programme de s1": ["Les modules du S1 en FST incluent généralement des matières de base comme les mathématiques, la physique, la chimie, et l'informatique. Ces matières visent à établir des fondations solides pour les filières futures."],
-                "matières importantes s1": ["Les mathématiques et la physique sont souvent cruciales pour bien comprendre les concepts des semestres suivants. L’informatique est aussi important pour développer des compétences techniques utiles."],
-                "organisation emploi du temps td": ["Il est recommandé de prioriser les matières où l’on a le plus de difficulté. Utilise un agenda pour répartir le temps de révision, d’exercices et de repos."],
-                "ressources livres s1": ["Demande à tes professeurs ou consulte le site de la FST pour connaître les livres conseillés. Utiliser des ressources en ligne comme des plateformes de cours en ligne peut aussi être utile."],
-                "évaluation cours": ["La note finale de chaque module peut être basée sur une combinaison d’examens, de devoirs, de contrôles continus, et des TP. La répartition exacte est souvent communiquée par chaque professeur."],
-                "cours présentiel distanciel": ["La majorité des cours sont en présentiel. Cependant, certaines ressources et certains supports peuvent être disponibles en ligne."],
-                "comment les td et les tp sont-ils organisés ? sont-ils obligatoires ?" : ["Ils sont souvent obligatoires et organisés en petits groupes pour faciliter l’apprentissage. L’inscription dans un groupe est faite par l’administration."],
-                "est-il possible de changer de groupe de td ou de tp ?" : ["Cela dépend des disponibilités et de la capacité des salles. Il faut contacter le responsable de la scolarité pour toute demande de changement."],
-                "comment se préparer efficacement pour les td et tp ?" : ["Relis tes notes de cours et fais des exercices pratiques en avance pour mieux comprendre les exercices en TD et TP."],
-                "les notes des tp influencent-elles les résultats finaux ?" : ["Oui, les notes de TP comptent dans la note finale du module. Chaque enseignant précisera la pondération des TP."],
-                "quelles méthodes de travail sont les plus efficaces en première année de fst ?" : ["Lire les cours avant et après chaque session, faire des résumés, et s’entraîner avec des exercices sont des méthodes efficaces. Utilise également des techniques de gestion du temps comme la méthode Pomodoro."],
-                //question sur circuit "electrique"
-                "qu'est-ce que l'électrocinétique ?": ["L'électrocinétique est la branche de l'électricité qui traite des courants électriques et des tensions dans les circuits.Elle étudie les lois régissant le comportement des charges électriques en mouvement et les composants des circuits."],
-                "quelles sont les grandeurs électriques fondamentales ?": [
-                     "Les grandeurs de base sont :\n"+
-                     "- Courant électrique (I) : Le flux de charges électriques, mesuré en ampères (A).\n"+
-                     "- Tension électrique (V) : La différence de potentiel entre deux points, mesurée en volts (V).\n"+
-                     "- Résistance (R) : L'opposition au passage du courant, mesurée en ohms (Ω).\n"+
-                     "- Conductance (G) : L'inverse de la résistance, mesurée en siemens (S).\n"+
-                     "- Puissance électrique (P) : La quantité d'énergie transférée ou consommée par unité de temps, mesurée en watts (W)."],
-                "comment est défini le courant électrique ?": ["Le courant électrique est le déplacement des charges électriques dans un conducteur."+"L'unité utilisée pour mesurer le courant est l'ampère (A)."],
-                "qu'est-ce que la tension électrique ?": ["La tension électrique, aussi appelée différence de potentiel, est la force qui pousse les électrons à travers un conducteur."],
-                "qu'est-ce que la loi d'ohm ?": ["La loi d'ohm relie la tension (V), le courant (I) et la résistance (R) dans un circuit : V = I * R."],
-                "comment calculer la puissance électrique ?": ["La puissance électrique se calcule par la formule : P = V * I, où P est la puissance, V la tension et I le courant."],
-                "qu'est-ce qu'un circuit série et un circuit parallèle ?": ["Dans un circuit en série, les composants sont connectés bout à bout, tandis que dans un circuit parallèle, les composants sont connectés aux mêmes points de tension, permettant différents chemins pour le courant."],
-                "comment calculer la résistance équivalente dans un circuit en série ?": ["La résistance équivalente dans un circuit en série est simplement la somme des résistances individuelles : R_eq = R1 + R2 + ... + Rn."],
-                "comment calculer la résistance équivalente dans un circuit en parallèle ?": ["La résistance équivalente dans un circuit en parallèle se calcule par la formule : 1/R_eq = 1/R1 + 1/R2 + ... + 1/Rn."],
-    };
-
-    return responses[userInput] ? responses[userInput][Math.floor(Math.random() * responses[userInput].length)] : "Désolé, je n'ai pas compris votre question.";
+    return "Désolé, je n'ai pas compris votre question.";
 }
 
+// الأحداث: زر الإرسال والضغط على Enter
 sendButton.addEventListener("click", sendMessage);
 inputField.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {

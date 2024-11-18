@@ -1,0 +1,126 @@
+{
+                "merci": ["De rien !", "Avec plaisir !", "Je suis là pour vous aider."],
+                "merci bien": ["De rien !", "Je suis content d'avoir pu aider.", "Avec plaisir !"],
+                "salut": ["Salut ! Comment puis-je vous aider aujourd'hui ?", "Bonjour !"],
+                "bonjour": ["Bonjour ! Que puis-je faire pour vous aujourd'hui ?"],
+                "comment ça va ": ["Je suis juste un bot, mais je fonctionne bien. Et vous ?"],
+                "aidez-moi": ["Bien sûr, que puis-je faire pour vous?", "Dites-moi ce dont vous avez besoin.", "Je suis là pour vous aider!"],
+                "merci beaucoup": ["Avec plaisir ! Enginuity est là pour vous.", "Ravi de pouvoir aider, signé Enginuity !", "C'est un plaisir d'être utile avec Enginuity !"],
+                "au revoir": ["Au revoir ! À bientôt avec Enginuity !", "Bonne journée ! Revenez quand vous voulez.", "Prenez soin de vous ! Enginuity sera toujours là pour vous."],
+                "comment tu t'appelles ": ["Je m'appelle Enginuity, votre assistant !", "Je suis Enginuity, ravi de vous rencontrer !"],
+                "c'est quoi": ["Pouvez-vous préciser votre question pour qu'Enginuity puisse vous aider ?", "Cela dépend, pourriez-vous m'en dire plus ? Enginuity est prêt à clarifier."],
+                "que fais-tu ": ["Je suis ici pour répondre à vos questions et vous assister, en tant qu'Enginuity.", "Enginuity est là pour vous aider avec vos demandes !"],
+                "où es-tu ": ["Je suis ici, dans le cloud, prêt à vous aider à tout moment.", "Enginuity est un assistant virtuel, toujours disponible où que vous soyez."],
+                "je ne comprends pas": ["Pas de problème, Enginuity peut reformuler. Pourriez-vous préciser ?", "Je suis là pour clarifier. Que voulez-vous dire ?"],
+                "besoin d'aide": ["Je suis là pour ça ! Expliquez-moi ce qu'il vous faut, Enginuity vous guide.", "Bien sûr, dites-moi ce dont vous avez besoin. Enginuity est à votre service."],
+                "c'est génial": ["Merci ! Enginuity est ravi que cela vous plaise.", "Je suis heureux que cela vous satisfasse ! Merci de faire confiance à Enginuity."],
+                "quoi de neuf ": ["Pas grand-chose, Enginuity est toujours prêt à vous aider !", "Pas de nouveautés, mais je suis à votre service, comme toujours."],
+                "parle-moi": ["Je suis là ! De quoi voulez-vous parler avec Enginuity ?", "Dites-moi ce qui vous intéresse, Enginuity est à l'écoute."],
+                "tu peux m'aider ": ["Bien sûr ! Enginuity est prêt à vous assister. Comment puis-je vous aider ?", "Certainement ! Que voulez-vous savoir ? Enginuity est là pour ça."],
+                "c'est bien": ["Merci ! Ça me fait plaisir de le savoir.", "Ravi que cela vous convienne, signé Enginuity !"],
+                "comment ça marche ": ["Je peux vous expliquer, de quoi s'agit-il exactement ?", "Avec Enginuity, tout devient plus clair. Posez votre question !"],
+                "j'ai une question": ["Allez-y, je suis Enginuity et je suis là pour répondre !", "Posez votre question, Enginuity est prêt."],
+                "tu es qui ": ["Je suis Enginuity, votre assistant virtuel spécialisé en mécanique et ingénierie.", "Je suis Enginuity, ravi de vous accompagner dans vos projets."],
+                "qu'est-ce que tu sais ": ["Je maîtrise de nombreux sujets en mécanique et ingénierie. Posez votre question !", "Avec Enginuity, vous avez accès à des réponses précises et adaptées."],
+                "pardon": ["Pas de souci ! Comment puis-je vous aider ?", "Ce n'est rien, Enginuity est toujours prêt à écouter."],
+                "ça va ": ["Oui, je fonctionne parfaitement. Merci de demander !", "Enginuity est toujours au top pour vous aider. Et vous ?"],
+                "j'ai besoin de toi": ["Je suis là pour vous. Que puis-je faire ?", "Avec Enginuity, vous n'êtes jamais seul. Que souhaitez-vous savoir ?"],
+                "je suis perdu": ["Ne vous inquiétez pas, Enginuity va vous guider. Quelle est votre question ?", "Dites-moi ce qui vous pose problème, Enginuity est là pour éclairer votre chemin."],
+                "super": ["Merci ! Enginuity est content que ça vous plaise.", "C'est gentil à vous ! Merci d'utiliser Enginuity."],
+
+
+
+
+
+
+                "qu'est-ce que la mécanique du point": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
+    
+                "parle-moi des bases de la mécanique du point": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
+    
+                "décris ce que signifie analyser le mouvement d'un point matériel": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
+    
+                "explique le concept de mouvement dans la mécanique du point": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
+
+    
+                "quelle est la première loi de newton": ["La première loi de Newton est la loi d'inertie : un objet en mouvement reste en mouvement à moins qu'une force extérieure n'agisse sur lui."],
+                "donne une explication sur la loi d'inertie": ["La première loi de Newton est la loi d'inertie : un objet en mouvement reste en mouvement à moins qu'une force extérieure n'agisse sur lui."],
+                "décris comment un objet réagit sans force extérieure": ["La première loi de Newton est la loi d'inertie : un objet en mouvement reste en mouvement à moins qu'une force extérieure n'agisse sur lui."],
+                "explique la loi de newton concernant l'état de repos ou de mouvement": ["La première loi de Newton est la loi d'inertie : un objet en mouvement reste en mouvement à moins qu'une force extérieure n'agisse sur lui."],
+
+    
+                "comment formuler l'équation du mouvement": ["L'équation du mouvement selon Newton est F = ma, où F est la force, m la masse, et a l'accélération."],
+                "montre comment établir une équation décrivant un mouvement": ["L'équation du mouvement selon Newton est F = ma, où F est la force, m la masse, et a l'accélération."],
+                "décris les étapes pour construire une équation dynamique": ["L'équation du mouvement selon Newton est F = ma, où F est la force, m la masse, et a l'accélération."],
+                "parle de la relation mathématique qui gouverne un mouvement": ["L'équation du mouvement selon Newton est F = ma, où F est la force, m la masse, et a l'accélération."],
+
+    
+                "qu'est-ce qu'un référentiel galiléen": ["Un référentiel galiléen est un référentiel où la première loi de Newton est valide."],
+                "définis un espace où les lois de newton s'appliquent": ["Un référentiel galiléen est un référentiel où la première loi de Newton est valide."],
+                "parle d'un cadre de référence valide pour la mécanique classique": ["Un référentiel galiléen est un référentiel où la première loi de Newton est valide."],
+                "explique ce qui rend un référentiel galiléen spécial": ["Un référentiel galiléen est un référentiel où la première loi de Newton est valide."],
+
+    
+                "quelle est la quantité de mouvement linéaire": ["La quantité de mouvement est donnée par p = mv, où p est la quantité de mouvement, m la masse, et v la vitesse."],
+                "parle de la relation entre la masse et la vitesse d'un objet": ["La quantité de mouvement est donnée par p = mv, où p est la quantité de mouvement, m la masse, et v la vitesse."],
+                "décris la formule qui exprime la quantité de mouvement": ["La quantité de mouvement est donnée par p = mv, où p est la quantité de mouvement, m la masse, et v la vitesse."],
+                "explique le concept physique derrière p = mv": ["La quantité de mouvement est donnée par p = mv, où p est la quantité de mouvement, m la masse, et v la vitesse."],
+                
+                "qu'est-ce que le travail mécanique": ["Le travail mécanique est lié à la variation de l'énergie cinétique d'un corps."],
+                "parle de la notion d'énergie transférée par une force": ["Le travail mécanique est lié à la variation de l'énergie cinétique d'un corps."],
+                "explique comment le travail relie force et déplacement": ["Le travail mécanique est lié à la variation de l'énergie cinétique d'un corps."],
+                "décris le concept de travail dans le contexte de la mécanique": ["Le travail mécanique est lié à la variation de l'énergie cinétique d'un corps."],
+
+
+
+
+                "quels sont les modules du programme de s1 ?": ["Les modules du S1 en FST incluent généralement des matières de base comme les mathématiques, la physique, la chimie, et l'informatique. Ces matières visent à établir des fondations solides pour les filières futures."],
+                "quelles sont les matières les plus importantes à maîtriser pour réussir en s1 ?": ["Les mathématiques et la physique sont souvent cruciales pour bien comprendre les concepts des semestres suivants. L’informatique est aussi important pour développer des compétences techniques utiles."],
+                "comment bien organiser son emploi du temps pour suivre tous les cours et les td ?" :["Il est recommandé de prioriser les matières où l’on a le plus de difficulté. Utilise un agenda pour répartir le temps de révision, d’exercices et de repos."],
+                "y a-t-il des ressources ou des livres recommandés pour chaque module ?" : ["Demande à tes professeurs ou consulte le site de la FST pour connaître les livres conseillés. Utiliser des ressources en ligne comme des plateformes de cours en ligne peut aussi être utile."],
+                "comment les cours sont-ils évalués (examens, devoirs, tp, etc.) ?" : ["La note finale de chaque module peut être basée sur une combinaison d’examens, de devoirs, de contrôles continus, et des TP. La répartition exacte est souvent communiquée par chaque professeur."],
+                "les cours sont-ils en présentiel ou en distanciel ?" : ["La majorité des cours sont en présentiel. Cependant, certaines ressources et certains supports peuvent être disponibles en ligne."],
+                "modules du programme de s1": ["Les modules du S1 en FST incluent généralement des matières de base comme les mathématiques, la physique, la chimie, et l'informatique. Ces matières visent à établir des fondations solides pour les filières futures."],
+                "matières importantes s1": ["Les mathématiques et la physique sont souvent cruciales pour bien comprendre les concepts des semestres suivants. L’informatique est aussi important pour développer des compétences techniques utiles."],
+                "organisation emploi du temps td": ["Il est recommandé de prioriser les matières où l’on a le plus de difficulté. Utilise un agenda pour répartir le temps de révision, d’exercices et de repos."],
+                "ressources livres s1": ["Demande à tes professeurs ou consulte le site de la FST pour connaître les livres conseillés. Utiliser des ressources en ligne comme des plateformes de cours en ligne peut aussi être utile."],
+                "évaluation cours": ["La note finale de chaque module peut être basée sur une combinaison d’examens, de devoirs, de contrôles continus, et des TP. La répartition exacte est souvent communiquée par chaque professeur."],
+                "cours présentiel distanciel": ["La majorité des cours sont en présentiel. Cependant, certaines ressources et certains supports peuvent être disponibles en ligne."],
+                "comment les td et les tp sont-ils organisés ? sont-ils obligatoires ?" : ["Ils sont souvent obligatoires et organisés en petits groupes pour faciliter l’apprentissage. L’inscription dans un groupe est faite par l’administration."],
+                "est-il possible de changer de groupe de td ou de tp ?" : ["Cela dépend des disponibilités et de la capacité des salles. Il faut contacter le responsable de la scolarité pour toute demande de changement."],
+                "comment se préparer efficacement pour les td et tp ?" : ["Relis tes notes de cours et fais des exercices pratiques en avance pour mieux comprendre les exercices en TD et TP."],
+                "les notes des tp influencent-elles les résultats finaux ?" : ["Oui, les notes de TP comptent dans la note finale du module. Chaque enseignant précisera la pondération des TP."],
+                "quelles méthodes de travail sont les plus efficaces en première année de fst ?" : ["Lire les cours avant et après chaque session, faire des résumés, et s’entraîner avec des exercices sont des méthodes efficaces. Utilise également des techniques de gestion du temps comme la méthode Pomodoro."],
+
+                
+
+
+                "qu'est-ce que l'électrocinétique ?": ["L'électrocinétique est la branche de l'électricité qui traite des courants électriques et des tensions dans les circuits.Elle étudie les lois régissant le comportement des charges électriques en mouvement et les composants des circuits."],
+                "quelles sont les grandeurs électriques fondamentales ?": ["Les grandeurs de base sont :\n- Courant électrique (I) : Le flux de charges électriques, mesuré en ampères (A).\n- Tension électrique (V) : La différence de potentiel entre deux points, mesurée en volts (V).\n- Résistance (R) : L'opposition au passage du courant, mesurée en ohms (Ω).\n- Conductance (G) : L'inverse de la résistance, mesurée en siemens (S).\n- Puissance électrique (P) : La quantité d'énergie transférée ou consommée par unité de temps, mesurée en watts (W)."],
+                "comment est défini le courant électrique ?": ["Le courant électrique est le déplacement des charges électriques dans un conducteur.L'unité utilisée pour mesurer le courant est l'ampère (A)."],
+                "qu'est-ce que la tension électrique ?": ["La tension électrique, aussi appelée différence de potentiel, est la force qui pousse les électrons à travers un conducteur."],
+                "qu'est-ce que la loi d'ohm ?": ["La loi d'ohm relie la tension (V), le courant (I) et la résistance (R) dans un circuit : V = I * R."],
+                "comment calculer la puissance électrique ?": ["La puissance électrique se calcule par la formule : P = V * I, où P est la puissance, V la tension et I le courant."],
+                "qu'est-ce qu'un circuit série et un circuit parallèle ?": ["Dans un circuit en série, les composants sont connectés bout à bout, tandis que dans un circuit parallèle, les composants sont connectés aux mêmes points de tension, permettant différents chemins pour le courant."],
+                "comment calculer la résistance équivalente dans un circuit en série ?": ["La résistance équivalente dans un circuit en série est simplement la somme des résistances individuelles : R_eq = R1 + R2 + ... + Rn."],
+                "comment calculer la résistance équivalente dans un circuit en parallèle ?": ["La résistance équivalente dans un circuit en parallèle se calcule par la formule : 1/R_eq = 1/R1 + 1/R2 + ... + 1/Rn."],
+                
+
+                "qu'est-ce qu'un vecteur ?": ["Un vecteur est un segment orienté défini par son point d'application, sa direction, son sens, et sa norme ou module."],
+                "comment se définit la projection orthogonale d'un vecteur ?": ["La projection orthogonale d'un vecteur AB sur une droite orientée s'obtient en abaissant les extrémités du vecteur perpendiculairement à cette droite. La longueur projetée est donnée par ab = AB * cos(α)."],
+                "qu'est-ce que la décomposition d'un vecteur ?": ["La décomposition d'un vecteur consiste à exprimer le vecteur comme une somme de composantes suivant deux directions données. Par exemple, AB = AB1*u + AB2*v."],
+                "qu'est-ce qu'un système de coordonnées cartésiennes ?": ["C'est un système d'axes orthogonaux permettant de repérer un point dans l'espace à l'aide de trois réels (x, y, z)."],
+                "comment exprime-t-on le vecteur position dans les coordonnées cartésiennes ?": ["Le vecteur position est exprimé comme OM = x*ux + y*uy + z*uz, où ux, uy, et uz sont les vecteurs unitaires des axes cartésiens."],
+                "qu'est-ce qu'un système de coordonnées curvilignes ?": ["C'est un système de coordonnées adapté aux problèmes présentant des symétries, comme les coordonnées polaires, cylindriques ou sphériques."],
+                "quelles sont les formules des coordonnées polaires ?": ["Dans un plan, les coordonnées polaires d'un point M sont définies par OM = ρ, l'angle θ, et les relations x = ρ*cos(θ) et y = ρ*sin(θ)."],
+                "comment définissez-vous les coordonnées cylindriques ?": ["Les coordonnées cylindriques ajoutent une coordonnée z aux coordonnées polaires, avec les relations x = ρ*cos(θ), y = ρ*sin(θ), et z = z."],
+                "quelles sont les caractéristiques des coordonnées sphériques ?": ["Les coordonnées sphériques d'un point sont définies par r (distance), θ (colatitude), et φ (longitude). Les relations sont x = r*sin(θ)*cos(φ), y = r*sin(θ)*sin(φ), et z = r*cos(θ)."],
+                "qu'est-ce qu'un champ scalaire ?": ["Un champ scalaire associe une valeur scalaire à chaque point de l'espace, comme la température ou la pression."],
+                "qu'est-ce qu'un champ vectoriel ?": ["Un champ vectoriel associe un vecteur à chaque point de l'espace, comme la vitesse d'un fluide ou un champ électrique."],                    "qu'est-ce que le gradient d'une fonction scalaire ?": ["Le gradient est un vecteur indiquant la direction et l'intensité de la variation maximale de la fonction scalaire."],
+                "qu'est-ce que la divergence d'un champ vectoriel ?": ["La divergence mesure l'intensité avec laquelle un champ vectoriel diverge ou converge en un point donné. Elle est définie comme div(A) = ∇·A."],
+                "qu'est-ce que le rotationnel d'un champ vectoriel ?": ["Le rotationnel d'un champ vectoriel mesure sa tendance à tourner autour d'un point. Il est défini par rot(A) = ∇×A."],
+                "qu'est-ce que le laplacien d'une fonction scalaire ?": ["Le laplacien est un opérateur différentiel d'ordre deux, défini comme la divergence du gradient d'une fonction scalaire : ∆f = div(grad(f))."],
+                "qu'est-ce que le théorème de Stokes ?": ["Ce théorème relie la circulation d'un champ vectoriel le long d'une courbe fermée au flux de son rotationnel à travers une surface bordée par cette courbe."],
+                "qu'est-ce que le théorème de Green-Ostrogradski ?": ["Ce théorème relie le flux d'un champ vectoriel à travers une surface fermée à l'intégrale triple de sa divergence sur le volume délimité par cette surface."]
+                    
+                
+}

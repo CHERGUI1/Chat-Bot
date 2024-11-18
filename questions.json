@@ -5,6 +5,11 @@
     "bonjour": ["Bonjour ! Que puis-je faire pour vous aujourd'hui ?"],
     "comment ça va ": ["Je suis juste un bot, mais je fonctionne bien. Et vous ?"],
     "aidez-moi": ["Bien sûr, que puis-je faire pour vous?", "Dites-moi ce dont vous avez besoin.", "Je suis là pour vous aider!"],
+    "coucou": "Coucou ! Comment ça se passe ?",
+    "bon matin": "Bon matin ! Comment puis-je vous aider ?",
+    "bonne après-midi": "Bonne après-midi ! Comment allez-vous ?",
+    "bonne soirée": "Bonne soirée ! Comment puis-je vous assister ?", 
+   "comment ça va": "Je suis un bot, mais je vais bien ! Et vous ?", 
     "merci beaucoup": ["Avec plaisir ! Enginuity est là pour vous.", "Ravi de pouvoir aider, signé Enginuity !", "C'est un plaisir d'être utile avec Enginuity !"],
     "au revoir": ["Au revoir ! À bientôt avec Enginuity !", "Bonne journée ! Revenez quand vous voulez.", "Prenez soin de vous ! Enginuity sera toujours là pour vous."],
     "comment tu t'appelles ": ["Je m'appelle Enginuity, votre assistant !", "Je suis Enginuity, ravi de vous rencontrer !"],
@@ -27,6 +32,28 @@
     "j'ai besoin de toi": ["Je suis là pour vous. Que puis-je faire ?", "Avec Enginuity, vous n'êtes jamais seul. Que souhaitez-vous savoir ?"],
     "je suis perdu": ["Ne vous inquiétez pas, Enginuity va vous guider. Quelle est votre question ?", "Dites-moi ce qui vous pose problème, Enginuity est là pour éclairer votre chemin."],
     "super": ["Merci ! Enginuity est content que ça vous plaise.", "C'est gentil à vous ! Merci d'utiliser Enginuity."],
+
+
+    "désolé": "Pas de problème ! N'hésitez pas à demander à nouveau.",
+    "que veux-tu dire": "Je suis là pour vous aider ! Pourriez-vous clarifier ce que vous demandez ?",
+    "peux-tu répéter": "Bien sûr ! Quelle partie souhaitez-vous que je répète ?",
+    "123": "Est-ce un code que vous essayez d'utiliser ? Faites-moi savoir ce sur quoi vous travaillez !",
+    "abcd": "On dirait que vous tapez des lettres ! Comment puis-je vous aider ?",
+    "xyz": "Je vois que vous testez. Dites-moi comment je peux vous assister !",
+    "lol": "Haha, heureux que vous vous amusiez ! Comment puis-je vous aider ?",
+    "mdr": "Je rigole aussi ! Comment puis-je vous aider ?",
+    "ptdr": "Je rigole par algorithm ! Comment puis-je vous assister ?",
+    "raconte-moi une blague": "Pourquoi les squelettes ne se battent-ils jamais ? Parce qu'ils n'ont pas de courage !",
+    "fais-moi rire": "Pourquoi le scarecrow a-t-il gagné un prix ? Parce qu'il était exceptionnel dans son domaine !",
+    "chante-moi une chanson": "Je ne suis pas chanteur, mais je peux vous donner un fait amusant !",
+    "donne-moi un fait amusant": "Saviez-vous que le miel ne se gâte jamais ? Des archéologues ont trouvé des pots de miel dans des tombes anciennes datant de plus de 3 000 ans !",
+    "quel temps fait-il": "Je ne peux pas vérifier la météo, mais vous pouvez la trouver facilement sur votre téléphone ou votre navigateur !",
+    "pleut-il": "Je ne peux pas vérifier la météo, mais je vous recommande de consulter une application météo !",
+    "oui": "Génial ! Comment puis-je vous aider encore ?",
+    "non": "D'accord ! Faites-moi savoir si vous avez besoin de quelque chose d'autre.",
+    "peut-être": "Très bien ! N'hésitez pas à me recontacter si vous avez besoin d'aide.",
+    "bien sûr": "Bien sûr ! Comment puis-je vous assister ?",
+    "ok": "Bien reçu ! Comment puis-je vous aider ensuite ?",
 
 
 
@@ -70,9 +97,8 @@
     "explique comment le travail relie force et déplacement": ["Le travail mécanique est lié à la variation de l'énergie cinétique d'un corps."],
     "décris le concept de travail dans le contexte de la mécanique": ["Le travail mécanique est lié à la variation de l'énergie cinétique d'un corps."],
 
-
-
-
+    "quels sont les modules du programme de s1 génie électrique": ["Les modules sont: Analyse, Algébre, Circuit Electrique et électrécité"],
+    "quels sont les modules du programme de s1 génie mecanique": ["Les modules sont: Analyse, Algébre, Circuit Electrique et électrécité"],
     "quels sont les modules du programme de s1 ?": ["Les modules du S1 en FST incluent généralement des matières de base comme les mathématiques, la physique, la chimie, et l'informatique. Ces matières visent à établir des fondations solides pour les filières futures."],
     "quelles sont les matières les plus importantes à maîtriser pour réussir en s1 ?": ["Les mathématiques et la physique sont souvent cruciales pour bien comprendre les concepts des semestres suivants. L’informatique est aussi important pour développer des compétences techniques utiles."],
     "comment bien organiser son emploi du temps pour suivre tous les cours et les td ?" :["Il est recommandé de prioriser les matières où l’on a le plus de difficulté. Utilise un agenda pour répartir le temps de révision, d’exercices et de repos."],

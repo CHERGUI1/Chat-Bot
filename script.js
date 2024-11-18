@@ -86,7 +86,7 @@ function findClosestMatch(input) {
         }
     });
 
-    return bestScore > 0.6 ? bestMatch : null; // اعتبر المطابقة جيدة إذا كانت أعلى من 0.6
+    return bestScore > 0.5 ? bestMatch : null; // اعتبر المطابقة جيدة إذا كانت أعلى من 0.5
 }
 
 // حساب التشابه بين النصوص
@@ -138,7 +138,13 @@ function getBotResponse(userInput) {
     // تحقق من وجود سؤال مطابق في JSON
     const closestMatch = findClosestMatch(userInput);
     if (closestMatch) {
-        return responses[closestMatch].join("\n");
+        const possibleAnswers = responses[closestMatch];
+        if (Array.isArray(possibleAnswers)) {
+            // اختر إجابة عشوائية
+            return possibleAnswers[Math.floor(Math.random() * possibleAnswers.length)];
+        } else {
+            return possibleAnswers; // إذا كانت الإجابة نصًا واحدًا
+        }
     }
 
     return "Désolé, je n'ai pas compris votre question.";

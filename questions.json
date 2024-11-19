@@ -141,12 +141,120 @@
     "comment définissez-vous les coordonnées cylindriques ?": ["Les coordonnées cylindriques ajoutent une coordonnée z aux coordonnées polaires, avec les relations x = ρ*cos(θ), y = ρ*sin(θ), et z = z."],
     "quelles sont les caractéristiques des coordonnées sphériques ?": ["Les coordonnées sphériques d'un point sont définies par r (distance), θ (colatitude), et φ (longitude). Les relations sont x = r*sin(θ)*cos(φ), y = r*sin(θ)*sin(φ), et z = r*cos(θ)."],
     "qu'est-ce qu'un champ scalaire ?": ["Un champ scalaire associe une valeur scalaire à chaque point de l'espace, comme la température ou la pression."],
-    "qu'est-ce qu'un champ vectoriel ?": ["Un champ vectoriel associe un vecteur à chaque point de l'espace, comme la vitesse d'un fluide ou un champ électrique."],                    "qu'est-ce que le gradient d'une fonction scalaire ?": ["Le gradient est un vecteur indiquant la direction et l'intensité de la variation maximale de la fonction scalaire."],
+    "qu'est-ce qu'un champ vectoriel ?": ["Un champ vectoriel associe un vecteur à chaque point de l'espace, comme la vitesse d'un fluide ou un champ électrique."],                    
+    "qu'est-ce que le gradient d'une fonction scalaire ?": ["Le gradient est un vecteur indiquant la direction et l'intensité de la variation maximale de la fonction scalaire."],
     "qu'est-ce que la divergence d'un champ vectoriel ?": ["La divergence mesure l'intensité avec laquelle un champ vectoriel diverge ou converge en un point donné. Elle est définie comme div(A) = ∇·A."],
     "qu'est-ce que le rotationnel d'un champ vectoriel ?": ["Le rotationnel d'un champ vectoriel mesure sa tendance à tourner autour d'un point. Il est défini par rot(A) = ∇×A."],
     "qu'est-ce que le laplacien d'une fonction scalaire ?": ["Le laplacien est un opérateur différentiel d'ordre deux, défini comme la divergence du gradient d'une fonction scalaire : ∆f = div(grad(f))."],
     "qu'est-ce que le théorème de Stokes ?": ["Ce théorème relie la circulation d'un champ vectoriel le long d'une courbe fermée au flux de son rotationnel à travers une surface bordée par cette courbe."],
-    "qu'est-ce que le théorème de Green-Ostrogradski ?": ["Ce théorème relie le flux d'un champ vectoriel à travers une surface fermée à l'intégrale triple de sa divergence sur le volume délimité par cette surface."]
-        
+    "qu'est-ce que le théorème de green-ostrogradski ?": ["Ce théorème relie le flux d'un champ vectoriel à travers une surface fermée à l'intégrale triple de sa divergence sur le volume délimité par cette surface."],
+
+
+    "qu'est-ce que la loi des mailles ?": ["La loi des mailles, ou loi de Kirchhoff des tensions (LKT), stipule que la somme algébrique des tensions dans une maille fermée d'un circuit électrique est égale à zéro."],
+    "comment appliquer la loi des mailles ?": ["Pour appliquer la loi des mailles, additionnez les tensions à travers chaque élément dans une boucle fermée et assurez-vous que leur somme est nulle : ∑V = 0."],
+        "quelle est l'importance de la loi des mailles ?": ["La loi des mailles permet d'analyser les tensions dans les circuits électriques, en aidant à déterminer les valeurs inconnues comme les courants ou les résistances."],
     
+        "qu'est-ce que la loi des nœuds ?": ["La loi des nœuds, ou loi de Kirchhoff des courants (LKC), stipule que la somme des courants entrants dans un nœud est égale à la somme des courants sortants."],
+        "comment appliquer la loi des nœuds ?": ["Pour appliquer la loi des nœuds, additionnez les courants entrants et sortants d'un nœud donné. Cela donne : ∑I_entrant = ∑I_sortant."],
+        "quelle est l'utilité de la loi des nœuds ?": ["La loi des nœuds aide à analyser les circuits électriques en déterminant les courants inconnus dans les réseaux complexes."],
+    
+        "quelles sont les lois de Kirchhoff ?": ["Les lois de Kirchhoff incluent la loi des mailles (LKT), qui traite des tensions dans une maille fermée, et la loi des nœuds (LKC), qui traite des courants en un nœud."],
+        "pourquoi les lois de Kirchhoff sont-elles importantes ?": ["Elles permettent d'analyser les circuits électriques complexes en établissant des relations fondamentales entre courants, tensions et résistances."],
+        "comment combiner les lois de Kirchhoff dans une analyse ?": ["On utilise la loi des mailles pour écrire des équations sur les tensions dans les boucles et la loi des nœuds pour écrire des équations sur les courants dans les nœuds."],
+    
+        "qu'est-ce que la loi de Thévenin ?": ["La loi de Thévenin stipule que tout circuit électrique linéaire peut être remplacé par une source de tension équivalente (V_th) en série avec une résistance équivalente (R_th)."],
+        "comment trouver l'équivalent de Thévenin ?": ["Pour trouver l'équivalent de Thévenin : \n1. Retirez la charge. \n2. Calculez la tension aux bornes (V_th). \n3. Calculez la résistance équivalente du circuit vu de la charge (R_th)."],
+        "quelle est l'application de la loi de Thévenin ?": ["La loi de Thévenin simplifie l'analyse des circuits en réduisant les parties complexes à une source de tension et une résistance équivalentes."],
+    
+        "qu'est-ce que la loi de Norton ?": ["La loi de Norton stipule que tout circuit électrique linéaire peut être remplacé par une source de courant équivalente (I_n) en parallèle avec une résistance équivalente (R_n)."],
+        "comment trouver l'équivalent de Norton ?": ["Pour trouver l'équivalent de Norton : \n1. Retirez la charge. \n2. Calculez le courant de court-circuit (I_n). \n3. Calculez la résistance équivalente du circuit (R_n)."],
+        "quelle est la relation entre Thévenin et Norton ?": ["Les équivalents de Thévenin et Norton sont liés : V_th = I_n × R_n et R_th = R_n. Ils sont interchangeables."],
+    
+        "qu'est-ce que la loi de superposition ?": ["La loi de superposition stipule que dans un circuit linéaire, la réponse (tension ou courant) est la somme des réponses individuelles causées par chaque source indépendamment."],
+        "comment appliquer la loi de superposition ?": ["Pour appliquer la loi de superposition : \n1. Considérez une seule source active à la fois (les autres sont court-circuitées ou ouvertes). \n2. Calculez la réponse pour chaque source. \n3. Additionnez toutes les réponses."],
+        "quelles sont les limites de la loi de superposition ?": ["Elle ne s'applique qu'aux circuits linéaires et ne peut pas être utilisée pour analyser les composants non linéaires comme les diodes ou les transistors."],
+    
+    
+    
+        "qu'est-ce qu'une force ?": ["Une force est une interaction qui modifie le mouvement d'un objet ou qui le déforme."],
+        "définis le concept de force": ["Une force est une grandeur vectorielle qui provoque une accélération ou une déformation sur un objet."],
+        "explique les différents types de forces": ["Les forces incluent les forces de contact, les forces gravitationnelles, les forces électriques et magnétiques, etc."],
+        
+        "qu'est-ce que l'énergie cinétique ?": ["L'énergie cinétique est l'énergie qu'un objet possède en raison de son mouvement, calculée par 1/2 mv²."],
+        "comment est calculée l'énergie cinétique ?": ["Elle est donnée par la formule 1/2 mv², où m est la masse et v la vitesse."],
+        "décris l'importance de l'énergie cinétique": ["Elle est utilisée pour analyser les mouvements et les impacts dans divers systèmes mécaniques."],
+    
+        "qu'est-ce que l'énergie potentielle ?": ["L'énergie potentielle est l'énergie stockée dans un objet en raison de sa position dans un champ de force."],
+        "comment est définie l'énergie potentielle gravitationnelle ?": ["Elle est donnée par U = mgh, où m est la masse, g la gravité, et h la hauteur."],
+        "quelle est la différence entre énergie cinétique et potentielle ?": ["L'énergie cinétique dépend du mouvement, tandis que l'énergie potentielle dépend de la position."],
+    
+        "qu'est-ce que le moment d'inertie ?": ["Le moment d'inertie est une mesure de la résistance d'un objet à la rotation autour d'un axe."],
+        "comment est calculé le moment d'inertie ?": ["Il est donné par la formule I = Σ(mr²), où m est la masse et r la distance à l'axe de rotation."],
+        "explique l'importance du moment d'inertie": ["Il joue un rôle clé dans les calculs de dynamique des rotations et dans la conception des systèmes mécaniques."],
+    
+        "qu'est-ce que le frottement ?": ["Le frottement est une force qui s'oppose au mouvement relatif entre deux surfaces en contact."],
+        "décris les types de frottement": ["Il y a le frottement statique, le frottement cinétique, et le frottement de roulement."],
+        "comment le frottement affecte-t-il les systèmes mécaniques ?": ["Il peut réduire l'efficacité mais est essentiel pour des actions comme marcher ou conduire."],
+    
+        "qu'est-ce qu'un pendule simple ?": ["Un pendule simple est un objet suspendu à une longueur fixe, oscillant sous l'effet de la gravité."],
+        "comment calculer la période d'un pendule simple ?": ["La période est donnée par T = 2π√(l/g), où l est la longueur et g l'accélération gravitationnelle."],
+        "quelles sont les applications des pendules ?": ["Ils sont utilisés dans les horloges, les instruments de mesure et pour étudier les oscillations."],
+    
+        "qu'est-ce que le principe de conservation de l'énergie ?": ["L'énergie totale d'un système isolé reste constante, même si elle change de forme."],
+        "explique l'application de la conservation de l'énergie": ["Elle est utilisée pour analyser les systèmes mécaniques, électriques, et thermodynamiques."],
+        "quels sont les systèmes où l'énergie est conservée ?": ["Dans les systèmes fermés sans forces externes dissipatives comme les frottements ou la résistance."],
+    
+        "qu'est-ce qu'un oscillateur harmonique ?": ["Un oscillateur harmonique est un système où une force de rappel est proportionnelle au déplacement."],
+        "quelles sont les caractéristiques d'un oscillateur harmonique ?": ["Il a une fréquence propre, une amplitude, et des oscillations périodiques."],
+        "comment modéliser un oscillateur harmonique ?": ["L'équation du mouvement est donnée par F = -kx, où k est la constante de raideur et x le déplacement."],
+    
+    
+    
+        "qu'est-ce qu'un levier ?": ["Un levier est une machine simple qui utilise une barre pivotant autour d'un point d'appui pour appliquer une force."],
+        "quels sont les types de leviers ?": ["Il existe trois types de leviers : levier d'ordre 1, 2 et 3, différenciés par la position de l'effort, de la charge et du point d'appui."],
+        "explique le fonctionnement d'un levier d'ordre 1": ["Dans un levier d'ordre 1, le point d'appui est situé entre l'effort et la charge."],
+    
+        "qu'est-ce qu'une poulie ?": ["Une poulie est une machine simple constituée d'une roue sur laquelle une corde ou une chaîne peut passer."],
+        "quels sont les types de poulies ?": ["Les poulies peuvent être fixes, mobiles, ou combinées dans un palan pour augmenter la force appliquée."],
+        "comment fonctionne un palan ?": ["Un palan combine plusieurs poulies pour réduire l'effort nécessaire pour soulever une charge."],
+    
+        "qu'est-ce qu'un plan incliné ?": ["Un plan incliné est une surface plane inclinée par rapport à l'horizontale, utilisée pour réduire l'effort nécessaire pour soulever une charge."],
+        "quelle est l'équation de base d'un plan incliné ?": ["La force nécessaire pour déplacer une charge est F = mg*sin(θ), où θ est l'angle d'inclinaison."],
+        "quelles sont les applications des plans inclinés ?": ["Ils sont utilisés dans les rampes, les routes de montagne, et les systèmes de transport."],
+    
+        "qu'est-ce qu'une roue et un essieu ?": ["Une roue et un essieu forment une machine simple qui amplifie une force pour déplacer des charges."],
+        "explique l'importance de la roue dans les systèmes mécaniques": ["La roue réduit la friction, facilitant le mouvement des charges lourdes."],
+        "quelles sont les applications des roues et des essieux ?": ["Elles sont utilisées dans les voitures, les chariots, et les systèmes de transport."],
+    
+        "qu'est-ce que la dynamique des fluides ?": ["La dynamique des fluides est l'étude des mouvements des liquides et des gaz."],
+        "qu'est-ce que l'équation de Bernoulli ?": ["L'équation de Bernoulli décrit la conservation de l'énergie dans un fluide en mouvement."],
+        "qu'est-ce que la viscosité d'un fluide ?": ["La viscosité mesure la résistance d'un fluide à l'écoulement, exprimée en pascal-seconde (Pa·s)."],
+    
+        "qu'est-ce qu'un matériau ductile ?": ["Un matériau ductile peut se déformer plastiquement sans se casser, comme le cuivre."],
+        "qu'est-ce qu'un matériau fragile ?": ["Un matériau fragile se casse sans déformation plastique significative, comme le verre."],
+        "explique la différence entre matériaux ductiles et fragiles": ["Les matériaux ductiles absorbent plus d'énergie avant de se casser, tandis que les matériaux fragiles se cassent brusquement."],
+    
+        "qu'est-ce que la loi de hooke ?": ["La loi de Hooke stipule que la déformation d'un matériau élastique est proportionnelle à la force appliquée : F = kx."],
+        "qu'est-ce que le module de young ?": ["Le module de Young mesure la rigidité d'un matériau, défini comme le rapport entre la contrainte et la déformation."],
+        "explique l'importance de la loi de hooke en ingénierie": ["Elle est utilisée pour concevoir des ressorts, des structures élastiques, et pour analyser la résistance des matériaux."],
+    
+        "qu'est-ce qu'un circuit rc ?": ["Un circuit RC est composé d'une résistance et d'un condensateur connectés en série ou en parallèle."],
+        "qu'est-ce qu'une constante de temps dans un circuit rc ?": ["La constante de temps τ est donnée par τ = RC, où R est la résistance et C la capacité."],
+        "explique le rôle d'un condensateur dans un circuit rc": ["Le condensateur stocke et libère de l'énergie, influençant la réponse temporelle du circuit."],
+    
+        "qu'est-ce qu'un circuit rl ?": ["Un circuit RL est composé d'une résistance et d'une inductance connectées en série ou en parallèle."],
+        "qu'est-ce que l'inductance dans un circuit rl ?": ["L'inductance est une propriété qui s'oppose aux changements de courant, mesurée en henrys (H)."],
+        "explique l'application des circuits rl": ["Ils sont utilisés dans les filtres électroniques, les alimentations, et les systèmes de télécommunication."],
+    
+        "qu'est-ce qu'un moteur électrique ?": ["Un moteur électrique convertit l'énergie électrique en énergie mécanique."],
+        "quels sont les types de moteurs électriques ?": ["Les types incluent les moteurs à courant continu, les moteurs synchrones et asynchrones."],
+        "comment fonctionne un moteur à courant continu ?": ["Il fonctionne sur le principe de l'interaction entre un champ magnétique et un courant électrique."],
+    
+        "qu'est-ce qu'un générateur électrique ?": ["Un générateur électrique convertit l'énergie mécanique en énergie électrique."],
+        "explique le principe de fonctionnement d'un générateur": ["Il fonctionne sur la base de l'induction électromagnétique."],
+        "quelles sont les applications des générateurs électriques ?": ["Ils sont utilisés pour produire de l'électricité dans les centrales électriques, les véhicules, et les dispositifs portables."]   
+                  
 }
+
+
+    

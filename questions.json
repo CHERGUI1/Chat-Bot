@@ -1,4 +1,4 @@
-[
+
     {
         "merci": ["De rien !", "Avec plaisir !", "Je suis là pour vous aider."],
         "merci bien": ["De rien !", "Je suis content d'avoir pu aider.", "Avec plaisir !"],
@@ -57,7 +57,7 @@
         "ok": "Bien reçu ! Comment puis-je vous aider ensuite ?",
     
 
-        
+
         "qu'est-ce que la mécanique du point": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
         "parle-moi des bases de la mécanique du point": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
         "décris ce que signifie analyser le mouvement d'un point matériel": ["La mécanique du point étudie le mouvement d'un point matériel sous l'effet des forces extérieures."],
@@ -330,4 +330,3 @@
 
 }
 
-]

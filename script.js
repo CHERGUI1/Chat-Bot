@@ -147,7 +147,7 @@ function getBotResponse(userInput) {
         }
     }
 
-    return "Désolé, je n'ai pas compris votre question.";
+    return "Hmm, je ne suis pas sûr d'avoir compris votre question. Pourriez-vous m'aider en précisant un peu plus ?";
 }
 
 // الأحداث: زر الإرسال والضغط على Enter

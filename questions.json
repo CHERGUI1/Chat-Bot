@@ -158,7 +158,7 @@
     "comment appliquer la loi des nœuds ?": ["Pour appliquer la loi des nœuds, additionnez les courants entrants et sortants d'un nœud donné. Cela donne : ∑I_entrant = ∑I_sortant."],
     "quelle est l'utilité de la loi des nœuds ?": ["La loi des nœuds aide à analyser les circuits électriques en déterminant les courants inconnus dans les réseaux complexes."],
 
-    "quelles sont les lois de Kirchhoff ?": ["Les lois de Kirchhoff incluent la loi des mailles (LKT), qui traite des tensions dans une maille fermée, et la loi des nœuds (LKC), qui traite des courants en un nœud."],
+    "quelles sont les lois de Kirchhoff ?": ["Les lois de Kirchhoff incluent la loi des mailles (LKT), qui traite des tensions dans une maille fermée, et la loi des nœuds (LKC), qui traite des courants en un nœud.","Les lois de Kirchhoff sont deux principes fondamentaux utilisés pour analyser les circuits électriques. \n La loi des mailles (ou loi de Kirchhoff des tensions) stipule que la somme algébrique des tensions dans une boucle fermée d'un circuit est égale à zéro. \n La loi des nœuds (ou loi de Kirchhoff des courants) stipule que la somme des courants entrants dans un nœud est égale à la somme des courants sortants de ce même nœud."],
     "pourquoi les lois de Kirchhoff sont-elles importantes ?": ["Elles permettent d'analyser les circuits électriques complexes en établissant des relations fondamentales entre courants, tensions et résistances."],
     "comment combiner les lois de Kirchhoff dans une analyse ?": ["On utilise la loi des mailles pour écrire des équations sur les tensions dans les boucles et la loi des nœuds pour écrire des équations sur les courants dans les nœuds."],
 
